@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="290.0" style="-fx-background-color: #262621;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CurrencyController">
+   <children>
+      <TextField fx:id="CurrencyDisp" layoutX="151.0" layoutY="63.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label fx:id="CurrDisp" alignment="CENTER" layoutX="46.0" layoutY="63.0" prefHeight="25.0" prefWidth="79.0" text="Currency:" textFill="WHITE" />
+      <Button fx:id="convert" layoutX="96.0" layoutY="381.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="40.0" prefWidth="98.0" text="Calculate">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Label fx:id="ConDisp" alignment="CENTER" layoutX="46.0" layoutY="124.0" prefHeight="25.0" prefWidth="79.0" text="Convert to:" textFill="WHITE" />
+      <TextField fx:id="ConvertDisp" layoutX="151.0" layoutY="124.0" prefHeight="25.0" prefWidth="98.0" />
+      <Button fx:id="Euro" layoutX="177.0" layoutY="298.0" mnemonicParsing="false" onAction="#Euro" prefHeight="40.0" prefWidth="69.0" text="Euro">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7763158082962036" green="0.09703947603702545" blue="0.09703947603702545" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8274509906768799" green="0.5137255191802979" blue="0.5137255191802979" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="Rupee" layoutX="51.0" layoutY="228.0" mnemonicParsing="false" onAction="#Rupees" prefHeight="40.0" prefWidth="69.0" text="Rupee">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7763158082962036" green="0.09703947603702545" blue="0.09703947603702545" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8274509906768799" green="0.5137255191802979" blue="0.5137255191802979" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="Pound" layoutX="51.0" layoutY="298.0" mnemonicParsing="false" onAction="#Pound" prefHeight="40.0" prefWidth="69.0" text="Pound">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7763158082962036" green="0.09703947603702545" blue="0.09703947603702545" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8274509906768799" green="0.5137255191802979" blue="0.5137255191802979" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="Dollar" layoutX="177.0" layoutY="228.0" mnemonicParsing="false" onAction="#Dollar" prefHeight="40.0" prefWidth="69.0" text="Dollar">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7763158082962036" green="0.09703947603702545" blue="0.09703947603702545" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8274509906768799" green="0.5137255191802979" blue="0.5137255191802979" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="13.0" prefHeight="30.0" prefWidth="194.0" text="Currency Calculator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Menu" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="290.0" style="-fx-background-color: #262621;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AgeController">
+   <children>
+      <TextField fx:id="DOBDisp" layoutX="158.0" layoutY="96.0" prefHeight="30.0" prefWidth="98.0" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="96.0" prefHeight="30.0" prefWidth="112.0" text="DOB(DD-MM-YYYY):" textFill="WHITE" />
+      <Button fx:id="calculate" layoutX="96.0" layoutY="384.0" mnemonicParsing="false" onAction="#CalculateAge" prefHeight="40.0" prefWidth="98.0" text="Calculate">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="198.0" prefHeight="30.0" prefWidth="112.0" text="Years:" textFill="WHITE" />
+      <TextField fx:id="YearDisp" layoutX="158.0" layoutY="198.0" prefHeight="30.0" prefWidth="98.0" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="263.0" prefHeight="30.0" prefWidth="112.0" text="Months:" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="321.0" prefHeight="30.0" prefWidth="112.0" text="Days:" textFill="WHITE" />
+      <TextField fx:id="MonthDisp" layoutX="158.0" layoutY="263.0" prefHeight="30.0" prefWidth="98.0" />
+      <TextField fx:id="DayDisp" layoutX="158.0" layoutY="321.0" prefHeight="30.0" prefWidth="98.0" />
+      <Label alignment="CENTER" layoutX="62.0" layoutY="23.0" prefHeight="26.0" prefWidth="167.0" text="Age Calculator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Menu" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
